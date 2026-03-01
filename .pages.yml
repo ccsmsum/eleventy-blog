@@ -13,6 +13,15 @@ content:
       - { name: draft, label: Draft, type: boolean }
       - { name: tags, label: Tags, type: string, list: true }
       - { name: body, label: Body, type: rich-text }
+  - name: patron-faqs
+    label: FAQ
+    type: collection
+    path: content/faqs
+    view:
+      fields: [ title, date ]
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: body, label: Body, type: rich-text }
   - name: about
     label: About page
     type: file
